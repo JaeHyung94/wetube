@@ -1,0 +1,25 @@
+// const express = require("express");
+
+//URL을 적으면 browser는 GET method를 실행. 우리가 login 하면 POST를 통해서.
+//브라우저가 정보를 받아올땐 GET.전달할땐 POST.
+
+// function handleListening() {
+//   console.log(`Listening on: http://localhost:${PORT}`);
+// }
+
+//get/post 함수는 2가지를 호출해. request와 response
+//누가 정보를 요청했는지, 어떤 정보가 전달되었는지 정보를 얻고싶으면 request를 사용
+//response는 get으로 온 정보에 반응하는 역할
+
+// function handleHome(req, res) {
+//   //   console.log(req);
+//   res.send("Hello from Home!");
+// }
+
+// function handleProfile(req, res) {
+//   res.send("You are on my profile");
+// } es6에서는 arrow function으로
+
+const middleware = (req, res, next) => {
+  res.send("not happening");
+}; // middleware가 next가 아니라 res를 send 하면 연결을 끊을수도 있다.
