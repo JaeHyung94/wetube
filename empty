@@ -23,3 +23,9 @@
 const middleware = (req, res, next) => {
   res.send("not happening");
 }; // middleware가 next가 아니라 res를 send 하면 연결을 끊을수도 있다.
+
+
+MVC pattern
+-> M: Data
+-> V: how does the data look
+-> C: function that looks for the data
