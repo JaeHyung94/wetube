@@ -1,11 +1,13 @@
 .header {
   margin-bottom: 20px;
+  padding: 0px 25px;
   background-color: $red;
   //   display: flex;
   //   justify-content: center;
   .header__wrapper {
     width: 100%;
     max-width: 1800px;
+    height: 40px;
     margin: 0 auto;
     // display: flex;
     // justify-content: space-between;
@@ -15,7 +17,7 @@
     align-items: center;
     .header__column {
       i {
-        font-size: 40px;
+        font-size: 30px;
         color: white;
       }
       &:nth-child(2) {
@@ -48,7 +50,7 @@
           padding: 3px 10px;
           padding-left: 10px;
           border: none;
-          border-radius: 10px;
+          border-radius: 5px;
           font-size: 20px;
         }
       }
