@@ -11,7 +11,16 @@ const SEARCH = "/search";
 const USERS = "/users";
 const EDIT_PROFILE = "/edit-profile";
 const CHANGE_PASSWORD = "/change-password";
+const ME = "/me";
 const USER_DETAIL = "/:id";
+
+//github
+const GITHUB = "/auth/github";
+const GITHUB_CALLBACK = "/auth/github/callback";
+
+//google
+const GOOGLE = "/auth/google";
+const GOOGLE_CALLBACK = "/auth/google/callback";
 
 //Videos
 const VIDEOS = "/videos";
@@ -64,7 +73,12 @@ const routes = {
     } else {
       return DELETE_VIDEO;
     }
-  }
+  },
+  github: GITHUB,
+  githubcallback: GITHUB_CALLBACK,
+  me: ME,
+  google: GOOGLE,
+  googleCallback: GOOGLE_CALLBACK
 };
 
 export default routes;
