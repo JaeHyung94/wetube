@@ -13,7 +13,8 @@ import {
   getMe,
   postFbLogin,
   googleLogin,
-  postGoogleLogin
+  postGoogleLogin,
+  getEditProfile
 } from "../controllers/userController";
 import { onlyPublic, onlyPrivate } from "../middlewares";
 
@@ -42,6 +43,7 @@ globalRouter.get(
   postGoogleLogin
 );
 
-globalRouter.get(routes.me, getMe);
+globalRouter.get(routes.me, onlyPrivate, getMe);
+// globalRouter.get(routes.editProfile, onlyPrivate, getEditProfile);
 
 export default globalRouter;
