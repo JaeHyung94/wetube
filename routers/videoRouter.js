@@ -18,7 +18,7 @@ const videoRouter = express.Router();
 videoRouter.get(routes.upload, onlyPrivate, getUpload);
 videoRouter.post(routes.upload, onlyPrivate, uploadVideo, postUpload);
 
-videoRouter.get(routes.editVideo(), onlyPrivate, getEditVideo);
+videoRouter.get(routes.editVideo(), getEditVideo);
 videoRouter.post(routes.editVideo(), onlyPrivate, postEdiVideo);
 
 videoRouter.get(routes.videoDetail(), videoDetail);
